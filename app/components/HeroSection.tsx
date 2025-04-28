@@ -103,7 +103,7 @@ export const HeroSection = () => {
 								<span className="h-[1px] w-8 sm:w-12 bg-blue-500"></span>
 							</div>
 							<p className="text-base sm:text-lg text-gray-600 max-w-2xl px-4 sm:px-0">
-								Currently pursuing my education at Bennett University, I'm a passionate full stack developer who believes that a great website is not just built — it's crafted with creativity, innovation, and a deep understanding of user experience.
+								Currently pursuing my education at Bennett University, I&apos;m a passionate full stack developer who believes that a great website is not just built — it&apos;s crafted with creativity, innovation, and a deep understanding of user experience.
 							</p>
 						</div>
 

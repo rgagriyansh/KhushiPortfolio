@@ -39,7 +39,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the portfolio in you
 Feel free to reach out to me:
 - Email: gusainkhushii@gmail.com
 - GitHub: [@KhushiGusain](https://github.com/KhushiGusain)
-- WhatsApp: +91 8076 592 250
 
 ## 📝 License
 
