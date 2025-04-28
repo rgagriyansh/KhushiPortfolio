@@ -16,13 +16,12 @@ interface TreeViewComponentProps {
   elements?: TreeViewElement[];
   initialExpandedItems?: string[];
   initialSelectedId?: string;
-  indicator?: boolean;
   openIcon?: React.ReactNode;
   closeIcon?: React.ReactNode;
 }
 
 const Tree = React.forwardRef<HTMLDivElement, TreeViewComponentProps>(
-  ({ elements = [], initialExpandedItems = [], initialSelectedId, indicator = true, openIcon, closeIcon }, ref) => {
+  ({ elements = [], initialExpandedItems = [], initialSelectedId, openIcon, closeIcon }, ref) => {
     const [expandedItems, setExpandedItems] = useState<string[]>(initialExpandedItems);
     const [selectedId, setSelectedId] = useState<string | undefined>(initialSelectedId);
 
