@@ -38,11 +38,7 @@ export function AnimatedGridPattern({
   x = -1,
   y = -1,
   strokeDasharray = 0,
-  numSquares = 50,
   className,
-  maxOpacity = 0.5,
-  duration = 4,
-  repeatDelay = 0.5,
   patternColor = '#E5E7EB20',
   bgColor = 'transparent',
   ...props
@@ -50,13 +46,11 @@ export function AnimatedGridPattern({
   const id = useId();
   const containerRef = useRef<HTMLDivElement>(null);
   const [squares, setSquares] = useState<Square[]>([]);
-  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
   const generateSquares = () => {
     if (!containerRef.current) return;
 
     const { width, height } = containerRef.current.getBoundingClientRect();
-    setContainerSize({ width, height });
 
     const squareSize = 40;
     const numCols = Math.ceil(width / squareSize);
